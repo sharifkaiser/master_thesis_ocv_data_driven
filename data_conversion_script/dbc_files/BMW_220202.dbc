@@ -1,0 +1,1216 @@
+VERSION "DNNBNNNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BMS eDME REME RDME LIM Kombi_Basis IHKA AE SME DSC_Modul_DSC_2013
+
+
+BO_ 417 V_VEH: 5 Kombi_Basis
+ SG_ V_VEH_COG : 16|16@1+ (0.015625,0) [0|350] "km/h"  BMS
+ SG_ ST_V_VEH_NSS : 12|4@1+ (1,0) [0|0] ""  AE
+ SG_ QU_V_VEH_COG : 32|4@1+ (1,0) [0|0] ""  AE
+ SG_ DVCO_VEH : 36|3@1+ (1,0) [0|0] ""  AE
+ SG_ CRC_V_VEH : 0|8@1+ (1,0) [0|255] ""  AE
+ SG_ ALIV_V_VEH : 8|4@1+ (1,0) [0|0] ""  AE
+
+BO_ 1001 CHGNG_ST: 8 AE
+ SG_ FRC_PWR_CHGNG : 28|12@1+ (25,0) [0|0] "W"  BMS
+ SG_ RQ_CHGRDI : 16|4@1+ (1,0) [0|0] ""  BMS
+
+BO_ 970 FRC_RD_INFO: 8 Kombi_Basis
+ SG_ SYNCN_FRC_RD_INFO : 40|4@1+ (1,0) [0|14] ""  BMS
+
+BO_ 816 KILOMETERSTAND: 8 Kombi_Basis
+ SG_ ST_FLLV_FUTA_SPAR : 48|2@1+ (1,0) [0|0] ""  AE
+ SG_ RNG : 52|12@1+ (1,0) [0|4094] "km"  AE
+ SG_ MILE_KM : 0|24@1+ (1,0) [0|16777214] "km"  BMS
+ SG_ FLLV_FUTA_RH : 40|8@1+ (0.5,0) [0|127] "l"  AE
+ SG_ FLLV_FUTA_LH : 32|8@1+ (0.5,0) [0|127] "l"  AE
+ SG_ FLLV_FUTA : 24|8@1+ (1,0) [0|254] "l"  AE
+
+BO_ 714 A_TEMP: 2 Kombi_Basis
+ SG_ TEMP_EX_UNFILT : 8|8@1+ (0.5,-40) [-40|85] "°C"  IHKA
+ SG_ TEMP_EX : 0|8@1+ (0.5,-40) [-40|85] "°C"  BMS
+
+BO_ 1052 ST_OPMO_HYB_2: 2 BMS
+ SG_ ST_COOL_HVSTO : 8|2@1+ (1,0) [0|0] ""  eDME
+
+BO_ 506 ST_HVSTO_1: 8 BMS
+ SG_ ST_WARN_ISL_BN_HV : 22|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_VA_COOL_HVSTO : 6|2@1+ (1,0) [0|0] ""  IHKA,eDME
+ SG_ ST_PRCHRG_LOKD_HVSTO : 10|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_ERR_LOKG_HVSTO : 8|2@1+ (1,0) [0|0] ""  REME,AE
+ SG_ ST_ERR_ISL_INTL_BN_HV : 2|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_ERR_ISL_EXTN_BN_HV : 0|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_ERR_DCSW_HVSTO : 20|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_EMMOD_HVSTO : 14|2@1+ (1,0) [0|0] ""  AE
+ SG_ ST_DCSW_HVSTO : 12|2@1+ (1,0) [0|0] ""  REME,AE
+ SG_ ST_CSOV_HVSTO : 24|4@1+ (1,0) [0|0] ""  IHKA,eDME
+ SG_ RQ_SER_HVSTO : 16|2@1+ (1,0) [0|0] ""  AE
+ SG_ RQ_COOL_HVSTO : 4|2@1+ (1,0) [0|0] ""  IHKA,AE
+ SG_ ERR_EMMOD_HVSTO : 18|2@1+ (1,0) [0|0] ""  AE
+ SG_ AVL_TEMP_HVSTO_MIN : 48|8@1+ (1,-50) [-50|202] "°C"  IHKA,AE
+ SG_ AVL_TEMP_HVSTO_MAX : 56|8@1+ (1,-50) [-50|202] "°C"  IHKA,AE
+ SG_ AVL_TEMP_HVSTO : 32|8@1+ (1,-50) [-50|204] "°C"  Kombi_Basis,IHKA,eDME,AE
+ SG_ AVL_TEMP_HTEX_HVSTO : 40|8@1+ (1,-50) [-50|204] "°C"  IHKA,eDME
+
+BO_ 767 ST_HT_HVSTO: 6 BMS
+ SG_ AVL_PWR_HT_HVSTO : 4|12@1+ (1,0) [0|4094] "W"  AE
+
+BO_ 962 ST_DIAG_OBD_2_PT: 8 BMS
+ SG_ ST_DIAG_OBD_2_PT_MAX_MUX : 4|6@1+ (1,0) [4|60] ""  AE
+ SG_ ST_DIAG_OBD_2_PT_IMME_MUX : 10|6@1+ (1,0) [4|60] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_8 : 58|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_7 : 52|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_6 : 46|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_5 : 40|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_4 : 34|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_3 : 28|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_2 : 22|6@1+ (1,0) [0|0] ""  AE
+ SG_ DIAG_ST_OBD_2_PT_1 : 16|6@1+ (1,0) [0|0] ""  AE
+ SG_ ALIV_ST_DIAG_OBD_2_PT : 0|4@1+ (1,0) [0|14] ""  AE
+
+BO_ 701 ST_DIAG_HV_1: 8 BMS
+ SG_ ST_DIAG_HV_ECU_1 : 16|4@1+ (1,0) [0|0] ""  AE
+ SG_ CHL_ST_DIAG_HV_1 : 12|4@1+ (1,0) [0|14] ""  AE
+ SG_ ALIV_ST_DIAG_HV_1 : 8|4@1+ (1,0) [0|14] ""  AE
+
+BO_ 1003 ST_CHG_HVSTO_3: 8 BMS
+ SG_ BEV_AVLB_PWR_SRT_DCHG_HVSTO : 16|16@1+ (3,-196602) [-196602|0] "W"  AE
+ SG_ BEV_AVLB_PWR_SRT_CHG_HVSTO : 0|16@1+ (3,0) [0|196602] "W"  AE
+ SG_ BEV_AVLB_PWR_LT_DCHG_HVSTO : 48|16@1+ (3,-196602) [-196602|0] "W"  AE
+ SG_ BEV_AVLB_PWR_LT_CHG_HVSTO : 32|16@1+ (3,0) [0|196602] "W"  AE
+
+BO_ 1072 ST_CHG_HVSTO_2: 8 BMS
+ SG_ PRD_U_SRT_DCHG_HVSTO : 16|16@1+ (0.1,0) [0|819] "V"  REME,AE
+ SG_ PRD_U_SRT_CHG_HVSTO : 0|16@1+ (0.1,0) [0|819] "V"  REME,AE
+ SG_ PRD_U_LT_DCHG_HVSTO : 48|16@1+ (0.1,0) [0|819] "V"  AE
+ SG_ PRD_U_LT_CHG_HVSTO : 32|16@1+ (0.1,0) [0|819] "V"  AE
+
+BO_ 274 STAT_HVSTO_2: 8 BMS
+ SG_ RQ_OPN_DCSW_HVSTO_ILY : 48|2@1+ (1,0) [0|0] ""  LIM,AE
+ SG_ RQ_OPN_DCSW_HVSTO_FAST : 50|2@1+ (1,0) [0|0] ""  LIM,AE
+ SG_ RQ_OPC_CHG_HVSTO : 46|2@1+ (1,0) [0|0] ""  AE
+ SG_ CHGCOND_HVSTO_DELTA : 52|4@1+ (0.00834,0) [0|0.1] "%"  eDME,AE
+ SG_ CHGCOND_HVSTO : 32|12@1+ (0.1,0) [0|100] "%"  eDME,AE
+ SG_ AVL_U_LINK : 56|8@1+ (4,0) [0|820] "V"  LIM,IHKA,AE
+ SG_ AVL_U_HVSTO : 16|16@1+ (0.1,0) [0|819] "V"  REME,LIM,IHKA,AE
+ SG_ AVL_I_HVSTO : 0|16@1+ (0.1,-819.2) [-819.2|819] "A"  REME,AE
+
+BO_ 1075 SPEC_HVSTO: 4 AE
+ SG_ ST_HT_HVSTO : 10|2@1+ (1,0) [0|0] ""  BMS
+ SG_ RQ_EMMOD_HYB_HVSTO : 20|4@1+ (1,0) [0|0] ""  BMS
+ SG_ PRD_SIT_COOL_HVSTO : 16|2@1+ (1,0) [0|0] ""  BMS
+
+BO_ 267 SPEC_DCSW_HVSTO: 3 AE
+ SG_ ST_DCHG_LINK_2 : 16|2@1+ (1,0) [0|0] ""  BMS
+ SG_ RQ_DCSW_HVSTO_CLO : 12|2@1+ (1,0) [0|0] ""  BMS
+ SG_ CRC_SPEC_DCSW_HVSTO : 0|8@1+ (1,0) [0|255] ""  BMS
+ SG_ ALIV_SPEC_DCSW_HVSTO : 8|4@1+ (1,0) [0|0] ""  BMS
+
+BO_ 891 RLS_COOL_HVSTO: 6 IHKA
+ SG_ TAR_PWR_ACCM : 8|8@1+ (0.04,0) [0|10.16] "kW" Vector__XXX
+ SG_ RQ_PAIC : 2|2@1+ (1,0) [0|0] ""  BMS
+ SG_ RQ_CSOV_HVSTO : 4|2@1+ (1,0) [0|0] ""  BMS
+ SG_ RLS_COOL_HVSTO : 0|2@1+ (1,0) [0|0] ""  BMS
+ SG_ PWR_ACCM_MIN : 24|8@1+ (0.04,0) [0|10.16] "kW" Vector__XXX
+ SG_ PRIO_PWR_MIN_ACCM : 32|8@1+ (1,0) [0|254] "" Vector__XXX
+ SG_ AVL_PWR_ACCM : 16|8@1+ (0.04,0) [0|10.16] "kW" Vector__XXX
+ SG_ AVL_I_EKK : 40|8@1+ (0.2,0) [0|50.8] "A"  REME
+
+BO_ 1298 NM2_A_CAN_EDME: 8 eDME
+ SG_ NM2_USR_DT_ACAN : 32|32@1+ (1,0) [0|0] "-"  BMS,REME,RDME,eDME,AE
+ SG_ NM2_AUTOSAR_RES_ACAN : 0|32@1+ (1,0) [0|0] ""  BMS,REME,RDME,eDME,AE
+
+BO_ 1074 MOD_VC: 8 BMS
+ SG_ TAR_U_VC_MOD : 4|12@1+ (0.1,0) [0|409.4] "V"  REME,AE
+ SG_ ST_STOR_AIC_COOL_RQMT : 48|8@1+ (20,0) [0|5040] "W"  IHKA
+ SG_ RQ_OPMO_HYM_HVSTO : 0|2@1+ (1,0) [0|0] ""  eDME,AE
+ SG_ RQ_CHGCOND_HVSTO_MIN : 16|8@1+ (0.5,0) [0|100] "%"  eDME,AE
+ SG_ RQ_CHGCOND_HVSTO_MAX : 24|8@1+ (0.5,0) [0|100] "%"  eDME,AE
+ SG_ DISP_AVL_CHGCOND_HVSTO : 32|8@1+ (0.5,0) [0|100] "%"  LIM,Kombi_Basis,eDME,AE
+
+BO_ 757 LIM_CHG_DCHG_HVSTO: 8 BMS
+ SG_ U_MIN_DCHG_HVSTO : 32|16@1+ (0.1,0) [0|819] "V"  REME,AE
+ SG_ U_MAX_CHG_HVSTO : 0|16@1+ (0.1,0) [0|819] "V"  REME,LIM,AE
+ SG_ I_DYN_MAX_DCHG_HVSTO : 48|16@1+ (0.1,-819.2) [-819.2|819] "A"  REME,AE
+ SG_ I_DYN_MAX_CHG_HVSTO : 16|16@1+ (0.1,-819.2) [-819.2|819] "A"  REME,AE
+
+BO_ 867 IDENT_HVSTO: 8 BMS
+ SG_ QUAN_CELL_HVSTO : 32|16@1+ (1,0) [0|65534] "" Vector__XXX
+
+BO_ 569 DT_HVSTO_2: 8 BMS
+ SG_ SYNCN_DT_HVSTO_2 : 0|4@1+ (1,0) [0|14] ""  Kombi_Basis,IHKA
+ SG_ PRD_ENERG_CHGCOND_2_COS : 8|16@1+ (1,0) [0|65534] "Wh"  Kombi_Basis,IHKA,AE
+ SG_ MUX_DT_HVSTO_2 : 4|4@1+ (1,0) [0|0] ""  Kombi_Basis,IHKA
+
+BO_ 1073 DT_HVSTO: 8 BMS
+ SG_ ST_SER_DSCO_PLG : 0|2@1+ (1,0) [0|0] ""  LIM,AE
+ SG_ ST_MEASMT_ISL : 2|2@1+ (1,0) [0|0] ""  AE
+ SG_ RQ_ABRT_CHGNG : 4|2@1+ (1,0) [0|0] ""  AE
+ SG_ PRD_T_PRECOND_HVSTO : 56|8@1+ (2,0) [0|500] "min"  AE
+ SG_ PRD_T_EOCHG : 32|8@1+ (5,0) [0|1270] "min"  AE
+ SG_ ENC_HVSTO_MAX : 40|12@1+ (0.02,0) [0|81.88] "kWh"  Kombi_Basis,eDME,AE
+
+
+
+CM_ BU_ BMS "candb_MCV_2013_V9_A-CAN_V26_Komponenten_20130111134358_bearbeitet.dbc";
+CM_ BU_ RDME "Das Steuergeraet ist der DME-Anteil des RXE-Steuergeraets";
+CM_ BU_ Kombi_Basis "Das Kombi ist der Check-Control-Master. Es ist berechtigt alle Fahrer-Check-Warnungen zu steuern (z.B.: Tuer offen, oelstand niedrig...)";
+CM_ BU_ IHKA "Steuergeraet Klimaanlage mit Bedieneinheit.
+Inkl. Center Stack und Bookmark Taster";
+CM_ SG_ 1001 RQ_CHGRDI "0 kein laden, 1 laden";
+CM_ SG_ 970 SYNCN_FRC_RD_INFO "Synchronisierung der Bedienmeldung (aufzaehlend)";
+CM_ SG_ 1052 ST_COOL_HVSTO "Fehlerstatus der Speicherkuehlung";
+CM_ SG_ 506 ST_WARN_ISL_BN_HV "Fehlerstatus: Wert des Isolationswiderstandes unter Warnschwelle";
+CM_ SG_ 506 ST_VA_COOL_HVSTO "Zustand des Kuehlventils des Hochvoltspeichers";
+CM_ SG_ 506 ST_PRCHRG_LOKD_HVSTO "Status ueber Sperre der Vorladung";
+CM_ SG_ 506 ST_ERR_LOKG_HVSTO "Fehlerstatus des HV-Interlock";
+CM_ SG_ 506 ST_ERR_ISL_INTL_BN_HV "Interner Isolationsfehler des Hochvoltsystems";
+CM_ SG_ 506 ST_ERR_ISL_EXTN_BN_HV "Externer Isolationsfehler des Hochvoltsystems";
+CM_ SG_ 506 ST_ERR_DCSW_HVSTO "Status ueber Schuetzkleber";
+CM_ SG_ 506 ST_EMMOD_HVSTO "Fehlerkategorie 2";
+CM_ SG_ 506 ST_CSOV_HVSTO "Fehlerstatus des Kuehlventils vor dem Hochvoltspeicher";
+CM_ SG_ 506 RQ_SER_HVSTO "Fehlerkategorie 3";
+CM_ SG_ 506 ERR_EMMOD_HVSTO "Fehlerkategorie 4 (Derating aktiv)
+
+";
+CM_ SG_ 506 AVL_TEMP_HVSTO_MIN "Die aktuelle minimale Zelltemperatur des Hochvoltspeichers";
+CM_ SG_ 506 AVL_TEMP_HVSTO_MAX "Die aktuelle maximale Zelltemperatur des Hochvoltspeichers";
+CM_ SG_ 506 AVL_TEMP_HVSTO "Die mittlere Temperatur des Hochvoltspeichers";
+CM_ SG_ 506 AVL_TEMP_HTEX_HVSTO "Gemessene Temperatur am Kuehlelement (Kuehlplatte) des Hochvoltspeichers";
+CM_ SG_ 767 AVL_PWR_HT_HVSTO "Aktuelle Leistung der Heizung des Hochvoltspeichers.
+Dieses Signal wird nur in Elektrofahrzeugen versendet.";
+CM_ SG_ 962 ST_DIAG_OBD_2_PT_MAX_MUX "Alle Diagnose Status eines Steuergeraets werden in einer Botschaft zusammengefasst. Falls mehr als 8 Diagnose Status vorhanden sind, werden diese Inhalte in der Botschaft gemultiplext. 
+Dieses Signal entspricht dem maximalen Wert im Signal ST_DIAG_OBD_2_PT_IMME_MUX (zwischen 4 und 60 moegliche Werte).
+
+";
+CM_ SG_ 962 ST_DIAG_OBD_2_PT_IMME_MUX "Alle Diagnose Status eines Steuergeraets werden in einer Botschaft zusammengefasst. Falls mehr als 8 Diagnose Status vorhanden sind, werden diese Inhalte in der Botschaft gemultiplext. Dieses Signal gibt den aktuellen Multiplex-Identifier an.
+Der maximal moegliche Wert ist dem Signal 'ST_DIAG_OBD_2_PT_MAX_MUX' zu entnehmen.
+";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_8 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_7 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_6 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_5 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_4 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_3 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_2 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 DIAG_ST_OBD_2_PT_1 "Diagnose Status zur uebermittlung der Status des OBD-Fehler, Cal-ID, oder CVN.
+Den Inhalt des Signals wird ueber das Signal Status_Diagnose_OBD_2_Antriebsstrang _Multiplexer_Aktuell definiert (Multiplexing)";
+CM_ SG_ 962 ALIV_ST_DIAG_OBD_2_PT "Standardabsicherung Alivezaehler laut Definition per Lastenheft Allgemeine Bordnetzkommunikation.";
+CM_ SG_ 701 ST_DIAG_HV_ECU_1 "Mit diesem Signal wird der Status der Diagnose zur HV-Schutzfunktion zum koordinierenden Steuergeraet uebertragen.";
+CM_ SG_ 701 CHL_ST_DIAG_HV_1 "Dieses Signal beinhaltet die Erweiterungs-ID 8 (dez) = 8 (hex) fuer den erweiterten Standardabsicherungs-Applikations-CRC und entspricht Bit 8-11 der Applikations-Data-ID (CRC-ID) aus CRC_Status_Diagnose_Hochspannung_1.";
+CM_ SG_ 701 ALIV_ST_DIAG_HV_1 "Standardabsicherung Alivezaehler laut Definition per Lastenheft Allgemeine Bordnetzkommunikation.";
+CM_ SG_ 1003 BEV_AVLB_PWR_SRT_DCHG_HVSTO "uebermittlung der verfuegbaren elektrischen Leistung des Speichers, die beim Entladen ueber einen Zeitraum von einer Sekunde abgegeben werden kann. Abregelung erlaubt, falls z.B. Sicherheitsabstaende oder Probleme dies erfordern.
+
+Entladeleistungen werden mit negativem Vorzeichen versehen.
+
+Wird zurzeit von der EME20 nur im SP2009 ausgewertet.";
+CM_ SG_ 1003 BEV_AVLB_PWR_SRT_CHG_HVSTO "uebermittlung der verfuegbaren elektrischen Leistung des Speichers, die beim Laden ueber einen Zeitraum von einer Sekunde aufgenommen werden kann. Abregelung erlaubt, falls z.B. Sicherheitsabstaende oder Probleme dies erfordern.
+
+Wird von der EME20 nur im SP2009 ausgewertet.
+";
+CM_ SG_ 1003 BEV_AVLB_PWR_LT_DCHG_HVSTO "uebermittlung der verfuegbaren elektrischen Leistung des Speichers, die beim Entladen ueber einen Zeitraum von fuenf Sekunden abgegeben werden kann.
+
+Entladeleistungen werden mit negativem Vorzeichen versehen.
+
+Wird zurzeit von der EME20 nur im SP2009 ausgewertet.";
+CM_ SG_ 1003 BEV_AVLB_PWR_LT_CHG_HVSTO "uebermittlung der verfuegbaren elektrischen Leistung des Speichers, die beim Laden ueber einen Zeitraum von fuenf Sekunden aufgenommen werden kann. Abregelung erlaubt, falls z.B. Sicherheitsabstaende oder Probleme dies erfordern.
+
+Wird zurzeit von der EME20 nur im SP2009 ausgewertet.";
+CM_ SG_ 1072 PRD_U_SRT_DCHG_HVSTO "Zu erwartende Spannung des Hochvoltspeichers bei Entladen mit der verfuegbaren elektrischen Entladeleistung fuer die Dauer von einer Sekunde";
+CM_ SG_ 1072 PRD_U_SRT_CHG_HVSTO "Zu erwartende Spannung des Hochvoltspeichers bei Laden mit der verfuegbaren elektrischen Ladeleistung fuer die Dauer von einer Sekunde";
+CM_ SG_ 1072 PRD_U_LT_DCHG_HVSTO "Zu erwartende Spannung des Hochvoltspeichers bei Entladen mit der verfuegbaren elektrischen Entladeleistung fuer die Dauer von fuenf Sekunden";
+CM_ SG_ 1072 PRD_U_LT_CHG_HVSTO "Zu erwartende Spannung des Hochvoltspeichers bei Laden mit der verfuegbaren elektrischen Ladeleistung fuer die Dauer von fuenf Sekunden";
+CM_ SG_ 274 RQ_OPN_DCSW_HVSTO_ILY "Fehlerkategorie 7";
+CM_ SG_ 274 RQ_OPN_DCSW_HVSTO_FAST "Fehlerkategorie 6";
+CM_ SG_ 274 RQ_OPC_CHG_HVSTO "Fehlerkategorie 5";
+CM_ SG_ 274 CHGCOND_HVSTO_DELTA "Das Signal beschreibt das Delta zwischen zwei SOC-Schritten in dem bisherigen SOC-Signal.";
+CM_ SG_ 274 CHGCOND_HVSTO "Aktueller Ladezustand (SoC: State of Charge) des Hochvoltspeichers bezogen auf dessen Nennkapazitaet
+
+Signal ist fuer OBD am ScanTool umzuskalieren: 0xFFE = 100% und somit 0xFF; 0xFFF (Fehler) auf Scan Tool 0xFF.";
+CM_ SG_ 274 AVL_U_LINK "Das Signal uebertraegt die aktuell durch die SME gemessene Zwischenkreisspannung.
+Das Signal wird fuer die Anzeige der Spannungsfreiheit benoetigt.";
+CM_ SG_ 274 AVL_U_HVSTO "Aktuell gemessene Spannung des Hochvoltspeichers";
+CM_ SG_ 274 AVL_I_HVSTO "Aktuell gemessener Strom durch den Hochvoltspeicher";
+CM_ SG_ 1075 ST_HT_HVSTO "Das Signal uebertraegt den Status der Batterieheizfunktion
+Wird nur in Elektrofahrzeugen versendet";
+CM_ SG_ 1075 RQ_EMMOD_HYB_HVSTO "Signal dient zur Notlaufkommunikation.";
+CM_ SG_ 1075 PRD_SIT_COOL_HVSTO "Voraussage ob eine praedikative Speicherkuehlung oder -erwaermung moeglich ist";
+CM_ SG_ 267 ST_DCHG_LINK_2 "Dieses Signal wird nur in Fahrzeugen, die rein elektrisch fahren koennen, ausser in nicht Plug-In-Faehigen Hybridfahrzeugen, versendet.
+Dieses Signal wird nicht versendet, wenn das Signal ST_DCHG_LINK versendet wird.";
+CM_ SG_ 267 RQ_DCSW_HVSTO_CLO "Anforderung zum Schliessen der Hochvoltschuetze.";
+CM_ SG_ 267 CRC_SPEC_DCSW_HVSTO "Standardabsicherung Applikations-CRC laut Definition per Lastenheft Allgemeine Bordnetzkommunikation.
+Dieses Signal verwendet die Applikations-CRC-ID = 85 dez. ";
+CM_ SG_ 891 TAR_PWR_ACCM "P_hv_ekk_wunsch
+Sollleistung des Klimakompressors";
+CM_ SG_ 891 RQ_PAIC "Signal dient zur Aktivierung des Hochvoltsystems ausserhalb 'Klemme 15 AN' fuer die Batteriekuehlung/ Vorkonditionierung.";
+CM_ SG_ 891 RQ_CSOV_HVSTO "Durch dieses Signal wird das Schalten des Kaeltemittelabsperrventils fuer die Kuehlung des Hochvoltspeichers angefordert.";
+CM_ SG_ 891 RLS_COOL_HVSTO "Auf dieses Signal hin muss das Kaelteabsperrventil geschlossen oder geoeffnet werden.
+";
+CM_ SG_ 891 PWR_ACCM_MIN "P_hv_ekk_min
+Minimal benoetigte Leistung des Klimakompressors";
+CM_ SG_ 891 PRIO_PWR_MIN_ACCM "Pr_hv_ekk_min
+Prioritaet der Leistungsanforderung";
+CM_ SG_ 891 AVL_PWR_ACCM "P_hv_ekk_ist
+Aktuell aufgenommene Leistung des Klimakompressors";
+CM_ SG_ 891 AVL_I_EKK "Dieses Signal gibt an, wie hoch die momentane Stromaufnahme am elektrischen Kaeltemittelverdichter ist.";
+CM_ SG_ 1298 NM2_USR_DT_ACAN "Enthaelt zusaetzliche Anwenderinformationen die fuer Diagnosezwecke von Bedeutung sind.
+
+Byte 7 muss die Diagnoseadresse des Steuergeraetes enthalten.
+Byte 6 muss 0x00 enthalten (reserviert).
+Byte 5 muss das 'Most Significant Byte' von der Adresse der Funktion enthalten, die den Bus wach haelt.
+Byte 4 muss das 'Least Significant Byte' von der Adresse der Funktion enthalten, die den Bus wach haelt.";
+CM_ SG_ 1298 NM2_AUTOSAR_RES_ACAN "AUTOSAR - Vorhalt. Mit Wert 00000000h zu belegen.";
+CM_ SG_ 1074 TAR_U_VC_MOD "Einzuregelnde Sollspannungsvorgabe im spannungsgeregelten Modus.";
+CM_ SG_ 1074 ST_STOR_AIC_COOL_RQMT "Der Speicherkuehlbedarf als mittlere thermische Leistung";
+CM_ SG_ 1074 RQ_OPMO_HYM_HVSTO "Anforderung des Betriebsmodus der Betriebsstrategie
+
+Wird von der Motorsteuerung im SP2013 (ausser F15-F16) ausgewertet.";
+CM_ SG_ 1074 RQ_CHGCOND_HVSTO_MIN "Die untere erlaubte Ladezustandsgrenze (SoC-Grenze) des Hochvoltspeichers
+
+Wird von der Motorsteuerung im SP2013 (ausser F15-F16) ausgewertet";
+CM_ SG_ 1074 RQ_CHGCOND_HVSTO_MAX "Die obere erlaubte Ladezustandsgrenze (SoC-Grenze) des Hochvoltspeichers
+
+Wird von der Motorsteuerung im SP2013 (ausser F15-F16) ausgewertet.";
+CM_ SG_ 1074 DISP_AVL_CHGCOND_HVSTO "Der dem Fahrer anzuzeigende Ladezustand (SoC) des Hochvoltspeichers";
+CM_ SG_ 757 U_MIN_DCHG_HVSTO "Die minimale erlaubte Entladespannung des Hochvoltspeichers";
+CM_ SG_ 757 U_MAX_CHG_HVSTO "Die maximale erlaubte Ladespannung des Hochvoltspeichers
+
+
+";
+CM_ SG_ 757 I_DYN_MAX_DCHG_HVSTO "Die aktuell gueltige Entladestromgrenze des Hochvoltspeichers
+Der Entladestrom ist generell mit negativem Vorzeichen definiert.";
+CM_ SG_ 757 I_DYN_MAX_CHG_HVSTO "Die aktuell gueltige Ladestromgrenze des Hochvoltspeichers";
+CM_ SG_ 569 SYNCN_DT_HVSTO_2 "Synchronisierung als Rueckmeldung von HV-Speicher (aufzaehlend).
+Dieses Signal wird im SP2009 nicht von PlugIn-Hybriden gesendet.";
+CM_ SG_ 569 PRD_ENERG_CHGCOND_2_COS "Prognostizierter Energieinhalt des Hochvoltspeichers in Abhaengigkeit von Ladezustand und angenommenem Verbrauch";
+CM_ SG_ 569 MUX_DT_HVSTO_2 "Dieses Signal wird im SP2009 nicht von PlugIn-Hybriden gesendet.";
+CM_ SG_ 1073 ST_SER_DSCO_PLG "Status des Service-Disconnectors:  steckt oder steckt nicht
+
+Wird nur in Fahrzeugen versendet, die rein elektrisch fahren koennen.";
+CM_ SG_ 1073 ST_MEASMT_ISL "Aktueller Vorgangsstatus der Isolationsmessung im 3-Phasen-System";
+CM_ SG_ 1073 RQ_ABRT_CHGNG "Dieses Signal dient zum Anfordern eines Ladeabbruchs durch die SME.
+Dieses Signal wird in allen Fahrzeugen, die rein elektrisch fahren koennen, ausser in nicht PlugIn-faehigen Hybridfahrzeugen, verwendet.";
+CM_ SG_ 1073 PRD_T_PRECOND_HVSTO "Voraussichtliche Dauer bis zum Ende der thermischen Vorkonditionierung des Hochvoltspeichers";
+CM_ SG_ 1073 PRD_T_EOCHG "Voraussichtliche Dauer bis zum Ladeende.
+Dieses Signal wird in allen Fahrzeugen, die rein elektrisch fahren koennen, ausser in nicht PlugIn-faehigen Hybridfahrzeugen, versendet.";
+CM_ SG_ 1073 ENC_HVSTO_MAX "Maximal moeglicher Energieinhalt des Hochvoltspeichers.";
+BA_DEF_  "Manufacturer" ENUM  "DBAG","VAG","BMWAG";
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgTxTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_  "NmAsrMessageCount" INT 1 255;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "Message_Longname" STRING ;
+BA_DEF_ BO_  "RequestMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "AddRemark" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark2" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime2" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime2" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType2" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime2" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark3" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime3" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime3" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType3" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime3" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark4" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime4" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime4" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType4" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime4" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark5" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime5" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime5" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType5" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime5" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark6" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime6" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime6" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType6" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime6" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark7" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime7" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime7" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType7" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime7" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark8" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime8" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime8" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType8" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime8" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark9" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime9" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime9" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType9" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime9" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark10" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime10" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime10" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType10" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime10" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark11" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime11" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime11" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType11" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime11" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark12" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime12" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime12" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType12" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime12" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark13" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime13" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime13" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType13" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime13" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark14" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime14" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime14" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType14" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime14" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark15" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime15" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime15" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType15" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime15" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark16" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime16" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime16" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType16" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime16" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark17" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime17" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime17" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType17" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime17" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark18" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime18" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime18" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType18" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime18" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark19" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime19" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime19" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType19" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime19" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark20" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime20" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime20" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType20" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime20" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark21" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime21" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime21" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType21" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime21" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark22" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime22" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime22" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType22" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime22" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark23" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime23" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime23" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType23" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime23" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark24" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime24" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime24" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType24" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime24" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark25" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime25" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime25" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType25" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime25" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark26" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime26" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime26" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType26" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime26" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark27" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime27" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime27" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType27" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime27" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark28" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime28" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime28" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType28" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime28" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark29" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime29" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime29" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType29" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime29" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark30" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime30" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime30" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType30" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime30" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark31" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime31" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime31" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType31" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime31" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark32" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime32" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime32" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType32" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime32" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark33" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime33" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime33" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType33" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime33" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark34" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime34" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime34" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType34" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime34" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark35" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime35" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime35" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType35" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime35" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark36" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime36" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime36" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType36" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime36" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark37" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime37" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime37" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType37" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime37" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark38" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime38" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime38" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType38" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime38" INT 0 1000000;
+BA_DEF_ BO_  "AddRemark39" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime39" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgDelayTime39" INT 0 1000000;
+BA_DEF_ BO_  "GenMsgSendType39" ENUM  "Zyklisch","Ereignisgesteuert","Auf Anfrage","dummy";
+BA_DEF_ BO_  "GenMsgStartDelayTime39" INT 0 1000000;
+BA_DEF_ BU_  "ECU_Longname" STRING ;
+BA_DEF_ BU_  "MCV-Nummer" STRING ;
+BA_DEF_ BU_  "DiagnoseStationsAdresse" HEX 0 255;
+BA_DEF_ BU_  "MessageManagerUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ SG_  "Signal_Name_English" STRING ;
+BA_DEF_ SG_  "Signal_Name_German" STRING ;
+BA_DEF_  "Manufacturer_ALT" ENUM  "DBAG","VAG","BMWAG","PAG","GM";
+BA_DEF_DEF_  "Manufacturer" "BMWAG";
+BA_DEF_DEF_  "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 1500;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_  "NmAsrCanMsgTxTimeoutTime" 1920;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1280;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "Message_Longname" "";
+BA_DEF_DEF_  "RequestMessage" "no";
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "AddRemark" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "AddRemark2" "";
+BA_DEF_DEF_  "GenMsgCycleTime2" 0;
+BA_DEF_DEF_  "GenMsgDelayTime2" 0;
+BA_DEF_DEF_  "GenMsgSendType2" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime2" 0;
+BA_DEF_DEF_  "AddRemark3" "";
+BA_DEF_DEF_  "GenMsgCycleTime3" 0;
+BA_DEF_DEF_  "GenMsgDelayTime3" 0;
+BA_DEF_DEF_  "GenMsgSendType3" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime3" 0;
+BA_DEF_DEF_  "AddRemark4" "";
+BA_DEF_DEF_  "GenMsgCycleTime4" 0;
+BA_DEF_DEF_  "GenMsgDelayTime4" 0;
+BA_DEF_DEF_  "GenMsgSendType4" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime4" 0;
+BA_DEF_DEF_  "AddRemark5" "";
+BA_DEF_DEF_  "GenMsgCycleTime5" 0;
+BA_DEF_DEF_  "GenMsgDelayTime5" 0;
+BA_DEF_DEF_  "GenMsgSendType5" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime5" 0;
+BA_DEF_DEF_  "AddRemark6" "";
+BA_DEF_DEF_  "GenMsgCycleTime6" 0;
+BA_DEF_DEF_  "GenMsgDelayTime6" 0;
+BA_DEF_DEF_  "GenMsgSendType6" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime6" 0;
+BA_DEF_DEF_  "AddRemark7" "";
+BA_DEF_DEF_  "GenMsgCycleTime7" 0;
+BA_DEF_DEF_  "GenMsgDelayTime7" 0;
+BA_DEF_DEF_  "GenMsgSendType7" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime7" 0;
+BA_DEF_DEF_  "AddRemark8" "";
+BA_DEF_DEF_  "GenMsgCycleTime8" 0;
+BA_DEF_DEF_  "GenMsgDelayTime8" 0;
+BA_DEF_DEF_  "GenMsgSendType8" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime8" 0;
+BA_DEF_DEF_  "AddRemark9" "";
+BA_DEF_DEF_  "GenMsgCycleTime9" 0;
+BA_DEF_DEF_  "GenMsgDelayTime9" 0;
+BA_DEF_DEF_  "GenMsgSendType9" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime9" 0;
+BA_DEF_DEF_  "AddRemark10" "";
+BA_DEF_DEF_  "GenMsgCycleTime10" 0;
+BA_DEF_DEF_  "GenMsgDelayTime10" 0;
+BA_DEF_DEF_  "GenMsgSendType10" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime10" 0;
+BA_DEF_DEF_  "AddRemark11" "";
+BA_DEF_DEF_  "GenMsgCycleTime11" 0;
+BA_DEF_DEF_  "GenMsgDelayTime11" 0;
+BA_DEF_DEF_  "GenMsgSendType11" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime11" 0;
+BA_DEF_DEF_  "AddRemark12" "";
+BA_DEF_DEF_  "GenMsgCycleTime12" 0;
+BA_DEF_DEF_  "GenMsgDelayTime12" 0;
+BA_DEF_DEF_  "GenMsgSendType12" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime12" 0;
+BA_DEF_DEF_  "AddRemark13" "";
+BA_DEF_DEF_  "GenMsgCycleTime13" 0;
+BA_DEF_DEF_  "GenMsgDelayTime13" 0;
+BA_DEF_DEF_  "GenMsgSendType13" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime13" 0;
+BA_DEF_DEF_  "AddRemark14" "";
+BA_DEF_DEF_  "GenMsgCycleTime14" 0;
+BA_DEF_DEF_  "GenMsgDelayTime14" 0;
+BA_DEF_DEF_  "GenMsgSendType14" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime14" 0;
+BA_DEF_DEF_  "AddRemark15" "";
+BA_DEF_DEF_  "GenMsgCycleTime15" 0;
+BA_DEF_DEF_  "GenMsgDelayTime15" 0;
+BA_DEF_DEF_  "GenMsgSendType15" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime15" 0;
+BA_DEF_DEF_  "AddRemark16" "";
+BA_DEF_DEF_  "GenMsgCycleTime16" 0;
+BA_DEF_DEF_  "GenMsgDelayTime16" 0;
+BA_DEF_DEF_  "GenMsgSendType16" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime16" 0;
+BA_DEF_DEF_  "AddRemark17" "";
+BA_DEF_DEF_  "GenMsgCycleTime17" 0;
+BA_DEF_DEF_  "GenMsgDelayTime17" 0;
+BA_DEF_DEF_  "GenMsgSendType17" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime17" 0;
+BA_DEF_DEF_  "AddRemark18" "";
+BA_DEF_DEF_  "GenMsgCycleTime18" 0;
+BA_DEF_DEF_  "GenMsgDelayTime18" 0;
+BA_DEF_DEF_  "GenMsgSendType18" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime18" 0;
+BA_DEF_DEF_  "AddRemark19" "";
+BA_DEF_DEF_  "GenMsgCycleTime19" 0;
+BA_DEF_DEF_  "GenMsgDelayTime19" 0;
+BA_DEF_DEF_  "GenMsgSendType19" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime19" 0;
+BA_DEF_DEF_  "AddRemark20" "";
+BA_DEF_DEF_  "GenMsgCycleTime20" 0;
+BA_DEF_DEF_  "GenMsgDelayTime20" 0;
+BA_DEF_DEF_  "GenMsgSendType20" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime20" 0;
+BA_DEF_DEF_  "AddRemark21" "";
+BA_DEF_DEF_  "GenMsgCycleTime21" 0;
+BA_DEF_DEF_  "GenMsgDelayTime21" 0;
+BA_DEF_DEF_  "GenMsgSendType21" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime21" 0;
+BA_DEF_DEF_  "AddRemark22" "";
+BA_DEF_DEF_  "GenMsgCycleTime22" 0;
+BA_DEF_DEF_  "GenMsgDelayTime22" 0;
+BA_DEF_DEF_  "GenMsgSendType22" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime22" 0;
+BA_DEF_DEF_  "AddRemark23" "";
+BA_DEF_DEF_  "GenMsgCycleTime23" 0;
+BA_DEF_DEF_  "GenMsgDelayTime23" 0;
+BA_DEF_DEF_  "GenMsgSendType23" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime23" 0;
+BA_DEF_DEF_  "AddRemark24" "";
+BA_DEF_DEF_  "GenMsgCycleTime24" 0;
+BA_DEF_DEF_  "GenMsgDelayTime24" 0;
+BA_DEF_DEF_  "GenMsgSendType24" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime24" 0;
+BA_DEF_DEF_  "AddRemark25" "";
+BA_DEF_DEF_  "GenMsgCycleTime25" 0;
+BA_DEF_DEF_  "GenMsgDelayTime25" 0;
+BA_DEF_DEF_  "GenMsgSendType25" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime25" 0;
+BA_DEF_DEF_  "AddRemark26" "";
+BA_DEF_DEF_  "GenMsgCycleTime26" 0;
+BA_DEF_DEF_  "GenMsgDelayTime26" 0;
+BA_DEF_DEF_  "GenMsgSendType26" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime26" 0;
+BA_DEF_DEF_  "AddRemark27" "";
+BA_DEF_DEF_  "GenMsgCycleTime27" 0;
+BA_DEF_DEF_  "GenMsgDelayTime27" 0;
+BA_DEF_DEF_  "GenMsgSendType27" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime27" 0;
+BA_DEF_DEF_  "AddRemark28" "";
+BA_DEF_DEF_  "GenMsgCycleTime28" 0;
+BA_DEF_DEF_  "GenMsgDelayTime28" 0;
+BA_DEF_DEF_  "GenMsgSendType28" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime28" 0;
+BA_DEF_DEF_  "AddRemark29" "";
+BA_DEF_DEF_  "GenMsgCycleTime29" 0;
+BA_DEF_DEF_  "GenMsgDelayTime29" 0;
+BA_DEF_DEF_  "GenMsgSendType29" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime29" 0;
+BA_DEF_DEF_  "AddRemark30" "";
+BA_DEF_DEF_  "GenMsgCycleTime30" 0;
+BA_DEF_DEF_  "GenMsgDelayTime30" 0;
+BA_DEF_DEF_  "GenMsgSendType30" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime30" 0;
+BA_DEF_DEF_  "AddRemark31" "";
+BA_DEF_DEF_  "GenMsgCycleTime31" 0;
+BA_DEF_DEF_  "GenMsgDelayTime31" 0;
+BA_DEF_DEF_  "GenMsgSendType31" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime31" 0;
+BA_DEF_DEF_  "AddRemark32" "";
+BA_DEF_DEF_  "GenMsgCycleTime32" 0;
+BA_DEF_DEF_  "GenMsgDelayTime32" 0;
+BA_DEF_DEF_  "GenMsgSendType32" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime32" 0;
+BA_DEF_DEF_  "AddRemark33" "";
+BA_DEF_DEF_  "GenMsgCycleTime33" 0;
+BA_DEF_DEF_  "GenMsgDelayTime33" 0;
+BA_DEF_DEF_  "GenMsgSendType33" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime33" 0;
+BA_DEF_DEF_  "AddRemark34" "";
+BA_DEF_DEF_  "GenMsgCycleTime34" 0;
+BA_DEF_DEF_  "GenMsgDelayTime34" 0;
+BA_DEF_DEF_  "GenMsgSendType34" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime34" 0;
+BA_DEF_DEF_  "AddRemark35" "";
+BA_DEF_DEF_  "GenMsgCycleTime35" 0;
+BA_DEF_DEF_  "GenMsgDelayTime35" 0;
+BA_DEF_DEF_  "GenMsgSendType35" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime35" 0;
+BA_DEF_DEF_  "AddRemark36" "";
+BA_DEF_DEF_  "GenMsgCycleTime36" 0;
+BA_DEF_DEF_  "GenMsgDelayTime36" 0;
+BA_DEF_DEF_  "GenMsgSendType36" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime36" 0;
+BA_DEF_DEF_  "AddRemark37" "";
+BA_DEF_DEF_  "GenMsgCycleTime37" 0;
+BA_DEF_DEF_  "GenMsgDelayTime37" 0;
+BA_DEF_DEF_  "GenMsgSendType37" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime37" 0;
+BA_DEF_DEF_  "AddRemark38" "";
+BA_DEF_DEF_  "GenMsgCycleTime38" 0;
+BA_DEF_DEF_  "GenMsgDelayTime38" 0;
+BA_DEF_DEF_  "GenMsgSendType38" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime38" 0;
+BA_DEF_DEF_  "AddRemark39" "";
+BA_DEF_DEF_  "GenMsgCycleTime39" 0;
+BA_DEF_DEF_  "GenMsgDelayTime39" 0;
+BA_DEF_DEF_  "GenMsgSendType39" "Zyklisch";
+BA_DEF_DEF_  "GenMsgStartDelayTime39" 0;
+BA_DEF_DEF_  "ECU_Longname" "";
+BA_DEF_DEF_  "MCV-Nummer" "";
+BA_DEF_DEF_  "DiagnoseStationsAdresse" 0;
+BA_DEF_DEF_  "MessageManagerUsed" "yes";
+BA_DEF_DEF_  "NodeLayerModules" "AsrNM_BMW.dll";
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 640;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_  "Signal_Name_English" "";
+BA_DEF_DEF_  "Signal_Name_German" "";
+BA_DEF_DEF_  "Manufacturer_ALT" "BMWAG";
+BA_ "NmAsrNode" BU_ BMS 1;
+BA_ "NmAsrNodeIdentifier" BU_ BMS 0;
+BA_ "NmAsrCanMsgCycleOffset" BU_ BMS 35;
+BA_ "NodeLayerModules" BU_ BMS "AsrNM_BMW.dll";
+BA_ "MessageManagerUsed" BU_ BMS 1;
+BA_ "DiagnoseStationsAdresse" BU_ BMS 7;
+BA_ "MCV-Nummer" BU_ BMS "12587";
+BA_ "ECU_Longname" BU_ BMS "Speicher Management Elektronik";
+BA_ "ECU_Longname" BU_ eDME "elektrische Digitale Motor Elektronik";
+BA_ "MessageManagerUsed" BU_ eDME 1;
+BA_ "MCV-Nummer" BU_ eDME "12617";
+BA_ "DiagnoseStationsAdresse" BU_ eDME 18;
+BA_ "NodeLayerModules" BU_ eDME "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ eDME 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ eDME 90;
+BA_ "NmAsrNodeIdentifier" BU_ eDME 0;
+BA_ "ECU_Longname" BU_ REME "Range Extender EME";
+BA_ "MessageManagerUsed" BU_ REME 1;
+BA_ "MCV-Nummer" BU_ REME "12572";
+BA_ "DiagnoseStationsAdresse" BU_ REME 10;
+BA_ "NodeLayerModules" BU_ REME "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ REME 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ REME 50;
+BA_ "NmAsrNodeIdentifier" BU_ REME 0;
+BA_ "ECU_Longname" BU_ RDME "RangeExtender Digitale Motor Elektronik";
+BA_ "MessageManagerUsed" BU_ RDME 1;
+BA_ "MCV-Nummer" BU_ RDME "12614";
+BA_ "DiagnoseStationsAdresse" BU_ RDME 9;
+BA_ "NodeLayerModules" BU_ RDME "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ RDME 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ RDME 45;
+BA_ "NmAsrNodeIdentifier" BU_ RDME 0;
+BA_ "ECU_Longname" BU_ LIM "Lade Interface Modul";
+BA_ "MessageManagerUsed" BU_ LIM 1;
+BA_ "MCV-Nummer" BU_ LIM "12553";
+BA_ "DiagnoseStationsAdresse" BU_ LIM 20;
+BA_ "NodeLayerModules" BU_ LIM "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ LIM 0;
+BA_ "NmAsrCanMsgCycleOffset" BU_ LIM 100;
+BA_ "NmAsrNodeIdentifier" BU_ LIM 0;
+BA_ "ECU_Longname" BU_ Kombi_Basis "Kombi_Basis";
+BA_ "MessageManagerUsed" BU_ Kombi_Basis 1;
+BA_ "MCV-Nummer" BU_ Kombi_Basis "12615";
+BA_ "DiagnoseStationsAdresse" BU_ Kombi_Basis 96;
+BA_ "NodeLayerModules" BU_ Kombi_Basis "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ Kombi_Basis 0;
+BA_ "NmAsrCanMsgCycleOffset" BU_ Kombi_Basis 480;
+BA_ "NmAsrNodeIdentifier" BU_ Kombi_Basis 0;
+BA_ "ECU_Longname" BU_ IHKA "Integrierte Heiz-/Klimaautomatik";
+BA_ "MessageManagerUsed" BU_ IHKA 1;
+BA_ "MCV-Nummer" BU_ IHKA "12588";
+BA_ "DiagnoseStationsAdresse" BU_ IHKA 120;
+BA_ "NodeLayerModules" BU_ IHKA "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ IHKA 0;
+BA_ "NmAsrCanMsgCycleOffset" BU_ IHKA 600;
+BA_ "NmAsrNodeIdentifier" BU_ IHKA 0;
+BA_ "ECU_Longname" BU_ AE "Antriebselektronik";
+BA_ "MessageManagerUsed" BU_ AE 1;
+BA_ "MCV-Nummer" BU_ AE "12604";
+BA_ "DiagnoseStationsAdresse" BU_ AE 26;
+BA_ "NodeLayerModules" BU_ AE "AsrNM_BMW.dll";
+BA_ "NmAsrNode" BU_ AE 1;
+BA_ "NmAsrCanMsgCycleOffset" BU_ AE 130;
+BA_ "NmAsrNodeIdentifier" BU_ AE 0;
+BA_ "GenMsgCycleTime" BO_ 1001 100;
+BA_ "GenMsgCycleTime" BO_ 970 100;
+BA_ "Message_Longname" BO_ 1052 "Status Betriebsart Hybrid 2";
+BA_ "DiagResponse" BO_ 1052 0;
+BA_ "DiagRequest" BO_ 1052 0;
+BA_ "RequestMessage" BO_ 1052 0;
+BA_ "NmAsrMessage" BO_ 1052 0;
+BA_ "GenMsgSendType" BO_ 1052 0;
+BA_ "GenMsgCycleTime" BO_ 1052 1000;
+BA_ "GenMsgDelayTime" BO_ 1052 0;
+BA_ "AddRemark" BO_ 1052 "";
+BA_ "GenMsgSendType2" BO_ 1052 1;
+BA_ "GenMsgCycleTime2" BO_ 1052 0;
+BA_ "GenMsgDelayTime2" BO_ 1052 200;
+BA_ "AddRemark2" BO_ 1052 "";
+BA_ "Message_Longname" BO_ 506 "Status Hochvoltspeicher 1";
+BA_ "DiagResponse" BO_ 506 0;
+BA_ "DiagRequest" BO_ 506 0;
+BA_ "RequestMessage" BO_ 506 0;
+BA_ "NmAsrMessage" BO_ 506 0;
+BA_ "GenMsgSendType" BO_ 506 0;
+BA_ "GenMsgCycleTime" BO_ 506 10;
+BA_ "GenMsgDelayTime" BO_ 506 0;
+BA_ "AddRemark" BO_ 506 "";
+BA_ "GenMsgSendType2" BO_ 506 1;
+BA_ "GenMsgCycleTime2" BO_ 506 0;
+BA_ "GenMsgDelayTime2" BO_ 506 50;
+BA_ "AddRemark2" BO_ 506 "";
+BA_ "Message_Longname" BO_ 767 "Status Heizung Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 767 0;
+BA_ "DiagRequest" BO_ 767 0;
+BA_ "RequestMessage" BO_ 767 0;
+BA_ "NmAsrMessage" BO_ 767 0;
+BA_ "GenMsgSendType" BO_ 767 0;
+BA_ "GenMsgCycleTime" BO_ 767 100;
+BA_ "GenMsgDelayTime" BO_ 767 0;
+BA_ "AddRemark" BO_ 767 "";
+BA_ "Message_Longname" BO_ 962 "Status Diagnose OBD 2 Antriebsstrang";
+BA_ "DiagResponse" BO_ 962 0;
+BA_ "DiagRequest" BO_ 962 0;
+BA_ "RequestMessage" BO_ 962 0;
+BA_ "NmAsrMessage" BO_ 962 0;
+BA_ "GenMsgSendType" BO_ 962 1;
+BA_ "GenMsgCycleTime" BO_ 962 100;
+BA_ "GenMsgDelayTime" BO_ 962 160;
+BA_ "AddRemark" BO_ 962 "";
+BA_ "Message_Longname" BO_ 701 "Status Diagnose Hochspannung 1";
+BA_ "DiagResponse" BO_ 701 0;
+BA_ "DiagRequest" BO_ 701 0;
+BA_ "RequestMessage" BO_ 701 0;
+BA_ "NmAsrMessage" BO_ 701 0;
+BA_ "GenMsgSendType" BO_ 701 0;
+BA_ "GenMsgCycleTime" BO_ 701 100;
+BA_ "GenMsgDelayTime" BO_ 701 0;
+BA_ "AddRemark" BO_ 701 "";
+BA_ "Message_Longname" BO_ 1003 "Status Ladung Hochvoltspeicher 3";
+BA_ "DiagResponse" BO_ 1003 0;
+BA_ "DiagRequest" BO_ 1003 0;
+BA_ "RequestMessage" BO_ 1003 0;
+BA_ "NmAsrMessage" BO_ 1003 0;
+BA_ "GenMsgSendType" BO_ 1003 0;
+BA_ "GenMsgCycleTime" BO_ 1003 1000;
+BA_ "GenMsgDelayTime" BO_ 1003 0;
+BA_ "AddRemark" BO_ 1003 "";
+BA_ "GenMsgSendType2" BO_ 1003 1;
+BA_ "GenMsgCycleTime2" BO_ 1003 0;
+BA_ "GenMsgDelayTime2" BO_ 1003 50;
+BA_ "AddRemark2" BO_ 1003 "";
+BA_ "Message_Longname" BO_ 1072 "Status Ladung Hochvoltspeicher 2";
+BA_ "DiagResponse" BO_ 1072 0;
+BA_ "DiagRequest" BO_ 1072 0;
+BA_ "RequestMessage" BO_ 1072 0;
+BA_ "NmAsrMessage" BO_ 1072 0;
+BA_ "GenMsgSendType" BO_ 1072 0;
+BA_ "GenMsgCycleTime" BO_ 1072 1000;
+BA_ "GenMsgDelayTime" BO_ 1072 0;
+BA_ "AddRemark" BO_ 1072 "";
+BA_ "GenMsgSendType2" BO_ 1072 1;
+BA_ "GenMsgCycleTime2" BO_ 1072 0;
+BA_ "GenMsgDelayTime2" BO_ 1072 200;
+BA_ "AddRemark2" BO_ 1072 "";
+BA_ "Message_Longname" BO_ 274 "Status Hochvoltspeicher 2";
+BA_ "DiagResponse" BO_ 274 0;
+BA_ "DiagRequest" BO_ 274 0;
+BA_ "RequestMessage" BO_ 274 0;
+BA_ "NmAsrMessage" BO_ 274 0;
+BA_ "GenMsgSendType" BO_ 274 0;
+BA_ "GenMsgCycleTime" BO_ 274 10;
+BA_ "GenMsgDelayTime" BO_ 274 0;
+BA_ "AddRemark" BO_ 274 "";
+BA_ "GenMsgSendType2" BO_ 274 0;
+BA_ "GenMsgCycleTime2" BO_ 274 20;
+BA_ "GenMsgDelayTime2" BO_ 274 0;
+BA_ "AddRemark2" BO_ 274 "";
+BA_ "Message_Longname" BO_ 1075 "Vorgabe Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 1075 0;
+BA_ "DiagRequest" BO_ 1075 0;
+BA_ "RequestMessage" BO_ 1075 0;
+BA_ "NmAsrMessage" BO_ 1075 0;
+BA_ "GenMsgSendType" BO_ 1075 0;
+BA_ "GenMsgCycleTime" BO_ 1075 1000;
+BA_ "GenMsgDelayTime" BO_ 1075 0;
+BA_ "AddRemark" BO_ 1075 "";
+BA_ "GenMsgSendType2" BO_ 1075 1;
+BA_ "GenMsgCycleTime2" BO_ 1075 0;
+BA_ "GenMsgDelayTime2" BO_ 1075 200;
+BA_ "AddRemark2" BO_ 1075 "";
+BA_ "Message_Longname" BO_ 267 "Vorgabe Trennschalter Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 267 0;
+BA_ "DiagRequest" BO_ 267 0;
+BA_ "RequestMessage" BO_ 267 0;
+BA_ "NmAsrMessage" BO_ 267 0;
+BA_ "GenMsgSendType" BO_ 267 0;
+BA_ "GenMsgCycleTime" BO_ 267 100;
+BA_ "GenMsgDelayTime" BO_ 267 0;
+BA_ "AddRemark" BO_ 267 "";
+BA_ "Message_Longname" BO_ 891 "Freigabe Kuehlung Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 891 0;
+BA_ "DiagRequest" BO_ 891 0;
+BA_ "RequestMessage" BO_ 891 0;
+BA_ "NmAsrMessage" BO_ 891 0;
+BA_ "GenMsgSendType" BO_ 891 1;
+BA_ "GenMsgCycleTime" BO_ 891 0;
+BA_ "GenMsgDelayTime" BO_ 891 200;
+BA_ "AddRemark" BO_ 891 "";
+BA_ "GenMsgSendType2" BO_ 891 0;
+BA_ "GenMsgCycleTime2" BO_ 891 10000;
+BA_ "GenMsgDelayTime2" BO_ 891 0;
+BA_ "AddRemark2" BO_ 891 "";
+BA_ "Message_Longname" BO_ 1298 "Netzwerkmanagement-2 A-CAN {AE}";
+BA_ "DiagResponse" BO_ 1298 0;
+BA_ "DiagRequest" BO_ 1298 0;
+BA_ "RequestMessage" BO_ 1298 0;
+BA_ "NmAsrMessage" BO_ 1298 1;
+BA_ "GenMsgSendType" BO_ 1298 0;
+BA_ "GenMsgCycleTime" BO_ 1298 100;
+BA_ "GenMsgDelayTime" BO_ 1298 0;
+BA_ "AddRemark" BO_ 1298 "";
+BA_ "GenMsgSendType2" BO_ 1298 1;
+BA_ "GenMsgCycleTime2" BO_ 1298 0;
+BA_ "GenMsgDelayTime2" BO_ 1298 0;
+BA_ "AddRemark2" BO_ 1298 "";
+BA_ "Message_Longname" BO_ 1074 "Modus Spannungsgesteuert";
+BA_ "DiagResponse" BO_ 1074 0;
+BA_ "DiagRequest" BO_ 1074 0;
+BA_ "RequestMessage" BO_ 1074 0;
+BA_ "NmAsrMessage" BO_ 1074 0;
+BA_ "GenMsgSendType" BO_ 1074 0;
+BA_ "GenMsgCycleTime" BO_ 1074 200;
+BA_ "GenMsgDelayTime" BO_ 1074 0;
+BA_ "AddRemark" BO_ 1074 "";
+BA_ "GenMsgSendType2" BO_ 1074 1;
+BA_ "GenMsgCycleTime2" BO_ 1074 0;
+BA_ "GenMsgDelayTime2" BO_ 1074 40;
+BA_ "AddRemark2" BO_ 1074 "";
+BA_ "Message_Longname" BO_ 757 "Begrenzung Ladung Entladung Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 757 0;
+BA_ "DiagRequest" BO_ 757 0;
+BA_ "RequestMessage" BO_ 757 0;
+BA_ "NmAsrMessage" BO_ 757 0;
+BA_ "GenMsgSendType" BO_ 757 0;
+BA_ "GenMsgCycleTime" BO_ 757 100;
+BA_ "GenMsgDelayTime" BO_ 757 0;
+BA_ "AddRemark" BO_ 757 "";
+BA_ "GenMsgSendType2" BO_ 757 1;
+BA_ "GenMsgCycleTime2" BO_ 757 0;
+BA_ "GenMsgDelayTime2" BO_ 757 50;
+BA_ "AddRemark2" BO_ 757 "";
+BA_ "Message_Longname" BO_ 867 "Identifikation Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 867 0;
+BA_ "DiagRequest" BO_ 867 0;
+BA_ "RequestMessage" BO_ 867 0;
+BA_ "NmAsrMessage" BO_ 867 0;
+BA_ "GenMsgSendType" BO_ 867 0;
+BA_ "GenMsgCycleTime" BO_ 867 1000;
+BA_ "GenMsgDelayTime" BO_ 867 0;
+BA_ "AddRemark" BO_ 867 "";
+BA_ "Message_Longname" BO_ 569 "Daten Hochvoltspeicher 2";
+BA_ "DiagResponse" BO_ 569 0;
+BA_ "DiagRequest" BO_ 569 0;
+BA_ "RequestMessage" BO_ 569 0;
+BA_ "NmAsrMessage" BO_ 569 0;
+BA_ "GenMsgSendType" BO_ 569 0;
+BA_ "GenMsgCycleTime" BO_ 569 200;
+BA_ "GenMsgDelayTime" BO_ 569 0;
+BA_ "AddRemark" BO_ 569 "";
+BA_ "GenMsgSendType2" BO_ 569 1;
+BA_ "GenMsgCycleTime2" BO_ 569 0;
+BA_ "GenMsgDelayTime2" BO_ 569 40;
+BA_ "AddRemark2" BO_ 569 "";
+BA_ "Message_Longname" BO_ 1073 "Daten Hochvoltspeicher";
+BA_ "DiagResponse" BO_ 1073 0;
+BA_ "DiagRequest" BO_ 1073 0;
+BA_ "RequestMessage" BO_ 1073 0;
+BA_ "NmAsrMessage" BO_ 1073 0;
+BA_ "GenMsgSendType" BO_ 1073 1;
+BA_ "GenMsgCycleTime" BO_ 1073 10;
+BA_ "GenMsgDelayTime" BO_ 1073 40;
+BA_ "AddRemark" BO_ 1073 "";
+BA_ "GenMsgSendType2" BO_ 1073 0;
+BA_ "GenMsgCycleTime2" BO_ 1073 200;
+BA_ "GenMsgDelayTime2" BO_ 1073 0;
+BA_ "AddRemark2" BO_ 1073 "";
+BA_ "Signal_Name_German" SG_ 1052 ST_COOL_HVSTO "Status_Kuehlung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1052 ST_COOL_HVSTO "status_cooling_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_WARN_ISL_BN_HV "Status_Warnung_Isolation_Bordnetz_Hochspannung";
+BA_ "Signal_Name_English" SG_ 506 ST_WARN_ISL_BN_HV "status_warning_isolation_Bordnetz_high-voltage";
+BA_ "Signal_Name_German" SG_ 506 ST_VA_COOL_HVSTO "Status_Ventil_Kuehlung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_VA_COOL_HVSTO "status_valve_cooling_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_PRCHRG_LOKD_HVSTO "Status_Vorladung_Verriegelt_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_PRCHRG_LOKD_HVSTO "status_precharge_locked_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_ERR_LOKG_HVSTO "Status_Fehler_Verriegelung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_ERR_LOKG_HVSTO "status_error_locking_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_ERR_ISL_INTL_BN_HV "Status_Fehler_Isolation_Intern_Bordnetz_Hochspannung";
+BA_ "Signal_Name_English" SG_ 506 ST_ERR_ISL_INTL_BN_HV "status_error_isolation_internal_Bordnetz_high-voltage";
+BA_ "Signal_Name_German" SG_ 506 ST_ERR_ISL_EXTN_BN_HV "Status_Fehler_Isolation_Extern_Bordnetz_Hochspannung";
+BA_ "Signal_Name_English" SG_ 506 ST_ERR_ISL_EXTN_BN_HV "status_error_isolation_external_Bordnetz_high-voltage";
+BA_ "Signal_Name_German" SG_ 506 ST_ERR_DCSW_HVSTO "Status_Fehler_Trennschalter_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_ERR_DCSW_HVSTO "status_error_disconnecting-switch_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_EMMOD_HVSTO "Status_Notlauf_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_EMMOD_HVSTO "status_emergency-mode_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_DCSW_HVSTO "Status_Trennschalter_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_DCSW_HVSTO "status_disconnecting-switch_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ST_CSOV_HVSTO "Status_Kaelteabsperrventil_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ST_CSOV_HVSTO "status_cold-shut-off-valve_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 RQ_SER_HVSTO "Anforderung_Service_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 RQ_SER_HVSTO "request_service_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 RQ_COOL_HVSTO "Anforderung_Kuehlung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 RQ_COOL_HVSTO "request_cooling_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 ERR_EMMOD_HVSTO "Fehler_Notlauf_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 ERR_EMMOD_HVSTO "error_emergency-mode_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 AVL_TEMP_HVSTO_MIN "Ist_Temperatur_Hochvoltspeicher_Minimal";
+BA_ "Signal_Name_English" SG_ 506 AVL_TEMP_HVSTO_MIN "actual-value_temperature_high-voltage-storage_minimum";
+BA_ "Signal_Name_German" SG_ 506 AVL_TEMP_HVSTO_MAX "Ist_Temperatur_Hochvoltspeicher_Maximal";
+BA_ "Signal_Name_English" SG_ 506 AVL_TEMP_HVSTO_MAX "actual-value_temperature_high-voltage-storage_maximum";
+BA_ "Signal_Name_German" SG_ 506 AVL_TEMP_HVSTO "Ist_Temperatur_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 AVL_TEMP_HVSTO "actual-value_temperature_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 506 AVL_TEMP_HTEX_HVSTO "Ist_Temperatur_Waermetauscher_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 506 AVL_TEMP_HTEX_HVSTO "actual-value_temperature_heat-exchanger_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 767 AVL_PWR_HT_HVSTO "Ist_Leistung_Heizung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 767 AVL_PWR_HT_HVSTO "actual-value_power_heating_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 962 ST_DIAG_OBD_2_PT_MAX_MUX "Status_Diagnose_OBD_2_Antriebsstrang_Maximal_Multiplexer";
+BA_ "Signal_Name_English" SG_ 962 ST_DIAG_OBD_2_PT_MAX_MUX "status_diagnosis_OBD_2_power-train_maximum_multiplexer";
+BA_ "Signal_Name_German" SG_ 962 ST_DIAG_OBD_2_PT_IMME_MUX "Status_Diagnose_OBD_2_Antriebsstrang_Aktuell_Multiplexer";
+BA_ "Signal_Name_English" SG_ 962 ST_DIAG_OBD_2_PT_IMME_MUX "status_diagnosis_OBD_2_power-train_immediate_multiplexer";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_8 "Diagnose_Status_OBD_2_Antriebsstrang_8";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_8 "diagnosis_status_OBD_2_power-train_8";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_7 "Diagnose_Status_OBD_2_Antriebsstrang_7";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_7 "diagnosis_status_OBD_2_power-train_7";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_6 "Diagnose_Status_OBD_2_Antriebsstrang_6";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_6 "diagnosis_status_OBD_2_power-train_6";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_5 "Diagnose_Status_OBD_2_Antriebsstrang_5";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_5 "diagnosis_status_OBD_2_power-train_5";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_4 "Diagnose_Status_OBD_2_Antriebsstrang_4";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_4 "diagnosis_status_OBD_2_power-train_4";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_3 "Diagnose_Status_OBD_2_Antriebsstrang_3";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_3 "diagnosis_status_OBD_2_power-train_3";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_2 "Diagnose_Status_OBD_2_Antriebsstrang_2";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_2 "diagnosis_status_OBD_2_power-train_2";
+BA_ "Signal_Name_German" SG_ 962 DIAG_ST_OBD_2_PT_1 "Diagnose_Status_OBD_2_Antriebsstrang_1";
+BA_ "Signal_Name_English" SG_ 962 DIAG_ST_OBD_2_PT_1 "diagnosis_status_OBD_2_power-train_1";
+BA_ "Signal_Name_German" SG_ 962 ALIV_ST_DIAG_OBD_2_PT "Alive_Status_Diagnose_OBD_2_Antriebsstrang";
+BA_ "Signal_Name_English" SG_ 962 ALIV_ST_DIAG_OBD_2_PT "alive_status_diagnosis_OBD_2_power-train";
+BA_ "Signal_Name_German" SG_ 701 ST_DIAG_HV_ECU_1 "Status_Diagnose_Hochspannung_STG_1";
+BA_ "Signal_Name_English" SG_ 701 ST_DIAG_HV_ECU_1 "status_diagnosis_high-voltage_ECU_1";
+BA_ "Signal_Name_German" SG_ 701 CHL_ST_DIAG_HV_1 "CHL_Status_Diagnose_Hochspannung_1";
+BA_ "Signal_Name_English" SG_ 701 CHL_ST_DIAG_HV_1 "CHL_status_diagnosis_high-voltage_1";
+BA_ "Signal_Name_German" SG_ 701 ALIV_ST_DIAG_HV_1 "Alive_Status_Diagnose_Hochspannung_1";
+BA_ "Signal_Name_English" SG_ 701 ALIV_ST_DIAG_HV_1 "alive_status_diagnosis_high-voltage_1";
+BA_ "Signal_Name_German" SG_ 1003 BEV_AVLB_PWR_SRT_DCHG_HVSTO "BEV_Verfuegbar_Leistung_Kurzzeit_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1003 BEV_AVLB_PWR_SRT_DCHG_HVSTO "BEV_available_power_short-term_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1003 BEV_AVLB_PWR_SRT_CHG_HVSTO "BEV_Verfuegbar_Leistung_Kurzzeit_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1003 BEV_AVLB_PWR_SRT_CHG_HVSTO "BEV_available_power_short-term_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1003 BEV_AVLB_PWR_LT_DCHG_HVSTO "BEV_Verfuegbar_Leistung_Langzeit_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1003 BEV_AVLB_PWR_LT_DCHG_HVSTO "BEV_available_power_long-term_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1003 BEV_AVLB_PWR_LT_CHG_HVSTO "BEV_Verfuegbar_Leistung_Langzeit_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1003 BEV_AVLB_PWR_LT_CHG_HVSTO "BEV_available_power_long-term_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1072 PRD_U_SRT_DCHG_HVSTO "Voraussage_Spannung_Kurzzeit_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1072 PRD_U_SRT_DCHG_HVSTO "prediction_voltage_short-term_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1072 PRD_U_SRT_CHG_HVSTO "Voraussage_Spannung_Kurzzeit_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1072 PRD_U_SRT_CHG_HVSTO "prediction_voltage_short-term_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1072 PRD_U_LT_DCHG_HVSTO "Voraussage_Spannung_Langzeit_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1072 PRD_U_LT_DCHG_HVSTO "prediction_voltage_long-term_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1072 PRD_U_LT_CHG_HVSTO "Voraussage_Spannung_Langzeit_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1072 PRD_U_LT_CHG_HVSTO "prediction_voltage_long-term_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 274 RQ_OPN_DCSW_HVSTO_ILY "Anforderung_oeffnen_Trennschalter_Hochvoltspeicher_sofort";
+BA_ "Signal_Name_English" SG_ 274 RQ_OPN_DCSW_HVSTO_ILY "request_open_disconnecting-switch_high-voltage-storage_instantly";
+BA_ "Signal_Name_German" SG_ 274 RQ_OPN_DCSW_HVSTO_FAST "Anforderung_oeffnen_Trennschalter_Hochvoltspeicher_Schnell";
+BA_ "Signal_Name_English" SG_ 274 RQ_OPN_DCSW_HVSTO_FAST "request_open_disconnecting-switch_high-voltage-storage_fast";
+BA_ "Signal_Name_German" SG_ 274 RQ_OPC_CHG_HVSTO "Anforderung_Unterbrechung_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 274 RQ_OPC_CHG_HVSTO "request_open-circuit_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 274 CHGCOND_HVSTO_DELTA "Ladezustand_Hochvoltspeicher_Delta";
+BA_ "Signal_Name_English" SG_ 274 CHGCOND_HVSTO_DELTA "charging-condition_high-voltage-storage_delta";
+BA_ "Signal_Name_German" SG_ 274 CHGCOND_HVSTO "Ladezustand_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 274 CHGCOND_HVSTO "charging-condition_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 274 AVL_U_LINK "Ist_Spannung_Zwischenkreis";
+BA_ "Signal_Name_English" SG_ 274 AVL_U_LINK "actual-value_voltage_Link";
+BA_ "Signal_Name_German" SG_ 274 AVL_U_HVSTO "Ist_Spannung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 274 AVL_U_HVSTO "actual-value_voltage_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 274 AVL_I_HVSTO "Ist_Strom_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 274 AVL_I_HVSTO "actual-value_current_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1075 ST_HT_HVSTO "Status_Heizung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1075 ST_HT_HVSTO "status_heating_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1075 RQ_EMMOD_HYB_HVSTO "Anforderung_Notlauf_Hybrid_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1075 RQ_EMMOD_HYB_HVSTO "request_emergency-mode_hybrid_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1075 PRD_SIT_COOL_HVSTO "Voraussage_Situation_Kuehlung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1075 PRD_SIT_COOL_HVSTO "prediction_situation_cooling_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 267 ST_DCHG_LINK_2 "Status_Entladung_Zwischenkreis_2";
+BA_ "Signal_Name_English" SG_ 267 ST_DCHG_LINK_2 "status_discharge_Link_2";
+BA_ "Signal_Name_German" SG_ 267 RQ_DCSW_HVSTO_CLO "Anforderung_Trennschalter_Hochvoltspeicher_Schliessen";
+BA_ "Signal_Name_English" SG_ 267 RQ_DCSW_HVSTO_CLO "request_disconnecting-switch_high-voltage-storage_close";
+BA_ "Signal_Name_German" SG_ 267 CRC_SPEC_DCSW_HVSTO "CRC_Vorgabe_Trennschalter_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 267 CRC_SPEC_DCSW_HVSTO "CRC_specification_disconnecting-switch_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 267 ALIV_SPEC_DCSW_HVSTO "Alive_Vorgabe_Trennschalter_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 267 ALIV_SPEC_DCSW_HVSTO "alive_specification_disconnecting-switch_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 891 TAR_PWR_ACCM "Soll_Leistung_Klimakompressor";
+BA_ "Signal_Name_English" SG_ 891 TAR_PWR_ACCM "target_power_air-conditioning-compressor";
+BA_ "Signal_Name_German" SG_ 891 RQ_PAIC "Anforderung_Standklima";
+BA_ "Signal_Name_English" SG_ 891 RQ_PAIC "request_park-air-conditioning";
+BA_ "Signal_Name_German" SG_ 891 RQ_CSOV_HVSTO "Anforderung_Kaelteabsperrventil_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 891 RQ_CSOV_HVSTO "request_cold-shut-off-valve_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 891 RLS_COOL_HVSTO "Freigabe_Kuehlung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 891 RLS_COOL_HVSTO "release_cooling_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 891 PWR_ACCM_MIN "Leistung_Klimakompressor_Minimal";
+BA_ "Signal_Name_English" SG_ 891 PWR_ACCM_MIN "power_air-conditioning-compressor_minimum";
+BA_ "Signal_Name_German" SG_ 891 PRIO_PWR_MIN_ACCM "Prioritaet_Leistung_Minimal_Klimakompressor";
+BA_ "Signal_Name_English" SG_ 891 PRIO_PWR_MIN_ACCM "priority_power_minimum_air-conditioning-compressor";
+BA_ "Signal_Name_German" SG_ 891 AVL_PWR_ACCM "Ist_Leistung_Klimakompressor";
+BA_ "Signal_Name_English" SG_ 891 AVL_PWR_ACCM "actual-value_power_air-conditioning-compressor";
+BA_ "Signal_Name_German" SG_ 891 AVL_I_EKK "Ist_Strom_EKK";
+BA_ "Signal_Name_English" SG_ 891 AVL_I_EKK "actual-value_current_EKK";
+BA_ "Signal_Name_German" SG_ 1298 NM2_USR_DT_ACAN "NM2_Anwender_Daten_A-CAN";
+BA_ "Signal_Name_English" SG_ 1298 NM2_USR_DT_ACAN "NM2_user_data_A-CAN";
+BA_ "Signal_Name_German" SG_ 1298 NM2_AUTOSAR_RES_ACAN "NM2_AUTOSAR_Reserviert_A-CAN";
+BA_ "Signal_Name_English" SG_ 1298 NM2_AUTOSAR_RES_ACAN "NM2_AUTOSAR_reserved_A-CAN";
+BA_ "Signal_Name_German" SG_ 1074 TAR_U_VC_MOD "Soll_Spannung_Spannungsgesteuert_Modus";
+BA_ "Signal_Name_English" SG_ 1074 TAR_U_VC_MOD "target_voltage_voltage-controlled_mode";
+BA_ "Signal_Name_German" SG_ 1074 ST_STOR_AIC_COOL_RQMT "Status_Speicher_Klima_Kuehlung_Bedarf";
+BA_ "Signal_Name_English" SG_ 1074 ST_STOR_AIC_COOL_RQMT "status_store_air-conditioning_cooling_requirement";
+BA_ "Signal_Name_German" SG_ 1074 RQ_OPMO_HYM_HVSTO "Anforderung_Betriebsart_Hybridmaster_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1074 RQ_OPMO_HYM_HVSTO "request_operating-mode_hybrid-master_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1074 RQ_CHGCOND_HVSTO_MIN "Anforderung_Ladezustand_Hochvoltspeicher_Minimal";
+BA_ "Signal_Name_English" SG_ 1074 RQ_CHGCOND_HVSTO_MIN "request_charging-condition_high-voltage-storage_minimum";
+BA_ "Signal_Name_German" SG_ 1074 RQ_CHGCOND_HVSTO_MAX "Anforderung_Ladezustand_Hochvoltspeicher_Maximal";
+BA_ "Signal_Name_English" SG_ 1074 RQ_CHGCOND_HVSTO_MAX "request_charging-condition_high-voltage-storage_maximum";
+BA_ "Signal_Name_German" SG_ 1074 DISP_AVL_CHGCOND_HVSTO "Anzeige_Ist_Ladezustand_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1074 DISP_AVL_CHGCOND_HVSTO "display_actual-value_charging-condition_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 757 U_MIN_DCHG_HVSTO "Spannung_Minimal_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 757 U_MIN_DCHG_HVSTO "voltage_minimum_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 757 U_MAX_CHG_HVSTO "Spannung_Maximal_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 757 U_MAX_CHG_HVSTO "voltage_maximum_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 757 I_DYN_MAX_DCHG_HVSTO "Strom_Dynamisch_Maximal_Entladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 757 I_DYN_MAX_DCHG_HVSTO "current_dynamic_maximum_discharge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 757 I_DYN_MAX_CHG_HVSTO "Strom_Dynamisch_Maximal_Ladung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 757 I_DYN_MAX_CHG_HVSTO "current_dynamic_maximum_charge_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 569 SYNCN_DT_HVSTO_2 "Synchronisation_Daten_Hochvoltspeicher_2";
+BA_ "Signal_Name_English" SG_ 569 SYNCN_DT_HVSTO_2 "synchronization_data_high-voltage-storage_2";
+BA_ "Signal_Name_German" SG_ 569 PRD_ENERG_CHGCOND_2_COS "Voraussage_Energie_Ladezustand_2_Verbraucher";
+BA_ "Signal_Name_English" SG_ 569 PRD_ENERG_CHGCOND_2_COS "prediction_Energy_charging-condition_2_consumer";
+BA_ "Signal_Name_German" SG_ 569 MUX_DT_HVSTO_2 "Multiplexer_Daten_Hochvoltspeicher_2";
+BA_ "Signal_Name_English" SG_ 569 MUX_DT_HVSTO_2 "multiplexer_data_high-voltage-storage_2";
+BA_ "Signal_Name_German" SG_ 1073 ST_SER_DSCO_PLG "Status_Service_Trennung_Stecker";
+BA_ "Signal_Name_English" SG_ 1073 ST_SER_DSCO_PLG "status_service_disconnection_plug";
+BA_ "Signal_Name_German" SG_ 1073 ST_MEASMT_ISL "Status_Messung_Isolation";
+BA_ "Signal_Name_English" SG_ 1073 ST_MEASMT_ISL "status_measurement_isolation";
+BA_ "Signal_Name_German" SG_ 1073 RQ_ABRT_CHGNG "Anforderung_Abbruch_Laden";
+BA_ "Signal_Name_English" SG_ 1073 RQ_ABRT_CHGNG "request_abort_charging";
+BA_ "Signal_Name_German" SG_ 1073 PRD_T_PRECOND_HVSTO "Voraussage_Zeit_Vorkonditionierung_Hochvoltspeicher";
+BA_ "Signal_Name_English" SG_ 1073 PRD_T_PRECOND_HVSTO "prediction_time_preconditioning_high-voltage-storage";
+BA_ "Signal_Name_German" SG_ 1073 PRD_T_EOCHG "Voraussage_Zeit_Ladeende";
+BA_ "Signal_Name_English" SG_ 1073 PRD_T_EOCHG "prediction_time_end-of-charging";
+BA_ "Signal_Name_German" SG_ 1073 ENC_HVSTO_MAX "Energieinhalt_Hochvoltspeicher_Maximal";
+BA_ "Signal_Name_English" SG_ 1073 ENC_HVSTO_MAX "energy-content_high-voltage-storage_maximum";
+

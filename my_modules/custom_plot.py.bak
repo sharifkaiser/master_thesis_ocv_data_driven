@@ -1,0 +1,38 @@
+import matplotlib.pyplot as plt
+import matplotlib.dates as md
+import datetime as dt
+import time
+
+print("imported custom_plot.py")
+
+# Params should be passed as (x_data, x_label), (y1_data, y1_label), (y2_data, y2_label), ... etc.
+def plot_dual_axis(*axes):
+
+  # assign argument values
+  x_data, x_label = axes[0]
+  y1_data, y1_label = axes[1]
+  y2_data, y2_label = axes[2]
+
+
+  # Code for two different scale data in y axes, subplot is needed
+  color_red = 'tab:red'
+  fig, ax1 = plt.subplots()             # subplots() rets fig, array of axes
+  ax1.set_ylabel(y1_label, color=color_red)
+  ax1.plot(x_data, y1_data, color=color_red) # SOC values with color red
+  ax1.tick_params(axis='y', labelcolor=color_red)  
+  ax1.set_xticklabels(x_label, rotation=45)
+  
+  color_blue = 'tab:blue'
+  ax2 = ax1.twinx()  # twinx() makes ax2 same as ax1, so no need to explicitly set_xlabel again
+  ax2.set_ylabel(y2_label, color=color_blue)
+  ax2.plot(x_data, y2_data, color=color_blue) # volt color red
+  ax2.tick_params(axis='y', labelcolor=color_blue)
+
+  plt.title("Values vs time") # set the whole plot name
+
+  # plt.legend(['740.minsoc_bms01'])
+    
+  fig.tight_layout()  # otherwise the right y-label is slightly clipped
+  plt.show()
+  # fig.canvas.get_supported_filetypes() # shows all supported file types
+  fig.savefig('my_figure.eps')        # eps does not break on zoom
